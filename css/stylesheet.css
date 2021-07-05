@@ -48,8 +48,8 @@ hr {
 }
 .bi-arrow-down {
   margin-top: 2em;
-  background-color: #007bff;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 header h1 {
   color: #fff;
@@ -70,13 +70,34 @@ header p {
   padding: 2em 0;
   margin: 4em 0;
 }
+.fwb-1-diagonal {
+  background-color: #000000;
+  padding: 2em 0;
+  margin: 4em 0;
+}
+.fwb-1-diagonal-img {
+  position: relative;
+  background-color: #000000;
+  padding: 2em 0;
+  margin: 4em 0;
+  margin-top: -.4em;
+}
+.diagonal-content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.face {
+  margin-top: 1.5em;
+  position: relative;
+  z-index: 1;
+}
 .skill-bar {
   width: 100%;
   height: 2em;
 }
 .skills {
-padding-right: 1em;
-color: #fff;
+  padding-right: 1em;
+  color: #fff;
 }
 .skill-html {
   width: 100%;
@@ -103,12 +124,12 @@ color: #fff;
 #testimonials {
   padding: 4em 0;
   min-height: 28em;
-  background-color: #3b7dc5;
+  background-color: #000000;
   color: #fff;
 }
 .testimonials {
   padding: 4em 0;
-  background-color: #3b7dc5;
+  background-color: #5a3e71;
   color: #fff;
 }
 .carousel-control-prev, .carousel-control-next {
@@ -117,19 +138,10 @@ color: #fff;
 .carousel-control-prev:hover, .carousel-control-next:hover {
   color: inherit;
 }
-.image-overlay-text {
-  position: relative;
-  text-align: center;
-  color: #fff;
-}
-.image-overlay-text h3 {
-  color: #fff;
-  text-shadow: 2px 2px 3px #404040;
-}
 .bl-overlay-text {
   position: absolute;
   bottom: 16px;
-  left: 16px;
+  left: 25px;
 }
 .sticky-top {
   top: 80px;
@@ -143,6 +155,14 @@ button.close {
   color: #fff;
   text-decoration: none;
 }
+.btn-primary {
+  background-color: #5a3e71;
+  border-color: #30203e;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #30203e;
+  border-color: #30203e;
+}
 .headshot {
   background-image: url(/images/chicago-photo.jpg);
   background-position: center;
@@ -150,6 +170,52 @@ button.close {
   background-repeat: no-repeat;
   min-height: 350px;
   margin-bottom: 2em;
+}
+.typewriter-resume h1 {
+  overflow: hidden;
+  border-right: .12em solid #5a3e71;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .03em;
+  animation: typing 1.2s steps(12, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #5a3e71; }
+}
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #5a3e71;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
 }
 .footer {
   position: absolute;
@@ -167,6 +233,15 @@ button.close {
   right: 30px;
   z-index: 99;
 }
+@media (min-width: 991px) {
+  .face {
+    margin-top: 12em;
+  }
+  .fwb-1-diagonal-img {
+    margin: .05em 0 8em 0;
+    padding: 6em 0;
+  }
+}
 @media (min-width: 768px) {
   .fwb-1 {
     padding: 6em 0;
@@ -178,9 +253,6 @@ button.close {
   }
   #testimonials {
     padding: 5em 0;
-    min-height: 28em;
-    background-color: #3b7dc5;
-    color: #fff;
   }
   .carousel-control-prev, .carousel-control-next {
     display: -ms-flexbox;
