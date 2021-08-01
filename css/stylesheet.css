@@ -90,6 +90,9 @@ hr {
   -o-animation: flickerAnimation 1s infinite;
   animation: flickerAnimation 1s infinite;
 }
+.nav-link {
+  cursor: pointer;
+}
 header h1 {
   color: #fff;
 }

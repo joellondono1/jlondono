@@ -35,7 +35,7 @@
             <a class="nav-link" href="https://www.jlondono.me/portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contact-form">Contact</a>
           </li>
         </ul>
       </div>
@@ -174,7 +174,17 @@
       </div>
     </div>
   </div>
-  <!-- Footer & Back to top button -->
+  <!-- Footer, Modal, & Back to top button -->
+  <div class="modal fade" id="contact-form" tabindex="-1" aria-labelledby="contactform" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/5966257.js" data-role="form" data-default-width="650px"></script>
+        </div>
+      </div>
+    </div>
+  </div>
   <button onclick="topFunction()" class="btn btn-dark btn-sm" id="btn-btt" title="Go to top"><svg class="bi bi-arrow-up" width="22" height="22" viewBox="0 0 20 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V6a.5.5 0 01.5-.5z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M9.646 4.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L10 5.707 7.354 8.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"/></svg></button>
   <div class="footer" id="contact">
     <svg id="footer-blob" viewBox="-30 -420 493 736">
@@ -184,16 +194,15 @@
       <path stroke="none" fill="#321c589c" d="M473 344H35C-42 252 23 120 102 186C160.01 234.464 317 202 330 61C340.4 -51.8 473 12 473 100V344Z"></path>
     </svg>
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xs-12 col-lg-2 mb-5 text-center text-sm-start footer-z">
-          <a href="/"><img src="/images/jld-logo-wht.png" class="img-fluid footer-logo mb-3" /></a>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-4 mb-5 footer-z">
+          <h3 class="text-light">Contact Me</h3>
+          <p>I'd love to learn more about your project and see how I can help. Feel free to send me an email with some details and we can schedule a time to talk.</p>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contact-form">
+            Let's Talk
+          </button>
         </div>
-        <div class="col-xs-12 col-md-6 col-lg-4 offset-lg-1 mb-3 footer-z">
-          <h2 class="text-light">Let's Talk...</h2>
-          <p>I'd love to learn more about your project and see how I can help. Feel free to send me an email with some details and we can schedule a free consultation.</p>
-          <a class="btn btn-dark" href="mailto:joellondono1@gmail.com">joellondono1@gmail.com</a>
-        </div>
-        <div class="col-xs-12 col-md-4 offset-md-1 col-lg-4 offset-lg-1 mb-3 footer-z">
+        <div class="col-xs-12 col-md-5 offset-md-1 col-lg-4 offset-lg-2 mb-3 footer-z">
           <h3 class="text-light">Socials</h3>
           <a class="btn btn-dark me-2" href="https://github.com/joellondono1" target="_blank"><i class="fab fa-github fa-lg"></i></a><a class="btn btn-dark me-2" href="https://www.linkedin.com/in/joellondono/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
           <h3 class="text-light mt-4">Links</h3>
